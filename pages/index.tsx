@@ -14,6 +14,7 @@ const Home: NextPage = () => {
       <main>
           <p className="text-2xl">test</p>
           <p className="text-2xl">test</p>
+          <p className="text-2xl">test :3 </p>
       </main>
     </div>
   )
