@@ -2,7 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-//toto
+import SideNavBar from "./component/SideNavBar";
+import Badges from "./component/Badges";
 
 const Home: NextPage = () => {
   return (
@@ -13,8 +14,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-          <p className="text-2xl">test</p>
-          <p className="text-2xl">test</p>
+          <SideNavBar />
+          <Badges />
       </main>
     </div>
   )
