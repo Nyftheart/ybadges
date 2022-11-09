@@ -1,6 +1,6 @@
 import React from 'react';
 // logo
-import NikeImg  from '../img/badge.png';
+import NikeImg  from '../img/Publicite_Borgar.jpg';
 // import framer hooks
 import { useMotionValue, useTransform, motion } from 'framer-motion';
 import Image from "next/image";
