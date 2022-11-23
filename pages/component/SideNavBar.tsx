@@ -30,6 +30,7 @@ const SideNavBar = () => {
                             YBadges
                         </h1>
                         <div className="my-4 border-b border-gray-100 pb-4 w-full">
+                            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
                             <a href="/Main">
                             <div className="flex mb-2 justify-start items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto" >
                                 <MdOutlineSpaceDashboard className="text-2xl text-gray-600 group-hover:text-white "/>
