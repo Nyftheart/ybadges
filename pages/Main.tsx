@@ -7,6 +7,8 @@ import {NavigationContainer} from "@react-navigation/native";
 import Recherche from "./component/Recherche";
 import Welcome from "./component/Welcome";
 import MinorCube from "./component/MinorCube";
+import MediumCube from "./component/MediumCube";
+import LargeCube from "./component/LargeCube";
 
 const Main: NextPage = () => {
     return (
@@ -19,6 +21,8 @@ const Main: NextPage = () => {
             <Recherche />
             <Welcome />
             <MinorCube />
+            <MediumCube />
+            <LargeCube />
         </div>
     )
 }
