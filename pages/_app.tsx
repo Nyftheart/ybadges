@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
       <SideNavBar></SideNavBar>
-      <Main />
+      <Component {...pageProps} />
     </div>);
 }
 
