@@ -1,0 +1,35 @@
+{
+  "User": {
+    "id": 1,
+    "Nom": "exemple",
+    "Prenom": "exemple",
+    "Filiere": "exemple",
+    "Class": "exemple",
+    "Id_Badge": ["B1", "exemple"],
+    "Id_Badge_Event": ["exemple", "exemple"]
+  },
+  "Badge": {
+    "id": 1,
+    "Nom": "exemple",
+    "Desc": "exemple",
+    "Categorie": "exemple",
+    "UnderCategorie": "exemple",
+    "Image": ["exemple", "exemple"],
+    "Date": "00/00/0000",
+    "Possesion": 100,
+    "MaxPossesion": 150,
+    "Palier": 1
+  },
+  "Badge_Event": {
+    "id": 1,
+    "Nom": "exemple",
+    "Desc": "exemple",
+    "Categorie": "exemple",
+    "UnderCategorie": "exemple",
+    "Image": ["exemple", "exemple"],
+    "Date": "00/00/0000",
+    "Possesion": 1,
+    "MaxPossesion": 150,
+    "Final_Date": "00/00/0000"
+  }
+}
