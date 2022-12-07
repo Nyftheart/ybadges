@@ -48,6 +48,12 @@ const SideNavBar = () => {
                                 <h3 className="text-base text-gray-800 group-hover:text-white font-semibold">Badges</h3>
                             </div>
                             </a>
+                            <a href="/TestThree">
+                            <div className="flex mb-2 justify-start items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto ">
+                                <SiOpenbadges className="text-2xl text-gray-600 group-hover:text-white "/>
+                                <h3 className="text-base text-gray-800 group-hover:text-white font-semibold">Test ThreeJS</h3>
+                            </div>
+                            </a>
                             <div className="flex mb-2 justify-start items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto ">
                                 <MdOutlineAnalytics className="text-2xl text-gray-600 group-hover:text-white "/>
                                 <h3 className="text-base text-gray-800 group-hover:text-white font-semibold">Analog</h3>
