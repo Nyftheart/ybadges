@@ -2,7 +2,7 @@ import React from 'react';
 import {FaChartBar} from "react-icons/fa";
 const MediumCube = () =>{
     return (
-        <div className="ml-64 mt-4 text-2xl mt-11 mr-96 justify-center items-center bg-white drop-shadow-md h-52 rounded-2xl hover:scale-105 duration-300">
+        <div className="ml-64 mt-8 text-2xl mt-11 mr-96 justify-center items-center bg-white drop-shadow-md h-52 rounded-2xl hover:scale-105 duration-300">
             <div className="flex">
                 <FaChartBar className="text-slate-500 ml-10 mt-4"/>
                 <p className="pl-3 pt-3 text-slate-500 text-xl">Cette Semaine</p>
