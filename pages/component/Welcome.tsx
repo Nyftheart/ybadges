@@ -3,7 +3,7 @@ const Welcome = () =>{
     return (
         <div className="flex ml-72 text-2xl justify-start items-center">
             <h1 className="flex font-semibold">
-                Hello <span className="animate-[wave_5s_ease-in-out_2]">&nbsp;👋</span>, arbitrary values
+                Hello <span className="animate-[wave_5s_ease-in-out_2]">&nbsp;👋</span>, Admin 1
             </h1>
         </div>
     )
