@@ -2,11 +2,11 @@ import React from 'react';
 import {FaSearch} from "react-icons/fa";
 const Recherche = () =>{
     return (
-        <div className="flex ml-60 mt-4 text-1xl w-56 bg-white rounded-lg px-4 py-1 justify-start items-center">
-            <div className="pr-2">
-                <FaSearch />
-            </div>
-            <input placeholder="Recherche" className="bg-white appearance-none border-2 border-none py-1 pl-1 text-gray-700 leading-tight focus:outline-none focus:border-none"/>
+        <div className="mr-12 pt-1 peer text-1xl ">
+            <form action="" className="relative bg-gray-200 text-sm rounded-lg flex pl-2">
+                <FaSearch className="mt-1.5 text-slate-400"/>
+                <input type="Recherche" placeholder="Recherches" className="bg-transparent pr-28 px-3 py-1 placeholder-slate-400"/>
+            </form>
         </div>
     )
 }
