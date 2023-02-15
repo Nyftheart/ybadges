@@ -1,9 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import SideNavBar from "./component/SideNavBar";
-import {NavigationContainer} from "@react-navigation/native";
 import Main from "./Main";
 
 const Home: NextPage = () => {
