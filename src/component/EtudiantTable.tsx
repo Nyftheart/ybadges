@@ -1,12 +1,24 @@
-import React, {useEffect} from 'react';
-import {Etudiant} from "../../Models/user.models";
-import {array} from "prop-types";
+import React, {useEffect, useState} from 'react';
+import UserService from "../services/User.service";
+
 
 // @ts-ignore
 const EtudiantTable = ({etudiants}) => {
+    const [allEtudiants,setAllEtudiants] = useState([]);
+
     useEffect(() => {
-        console.log(etudiants)
-    },[])
+        setAllEtudiants(etudiants);
+    },[etudiants])
+
+    function deleteUser(etudiant : any){
+        UserService.deleteOne(etudiant.id).then(() => {
+            // @ts-ignore
+            let updatedEtudiants = allEtudiants.splice(allEtudiants.indexOf(etudiant),1)
+            setAllEtudiants(updatedEtudiants)
+            alert(`Utilisateur supprimer`);
+        })
+    }
+
     return (
         <div className="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5">
             <table className="w-full border-collapse bg-white text-left text-sm text-gray-500">
@@ -21,8 +33,8 @@ const EtudiantTable = ({etudiants}) => {
                 </thead>
                 <tbody className="divide-y divide-gray-100 border-t border-gray-100">
                 {
-                   etudiants.length>0 && etudiants.map((etudiant : any) => {
-                        return (<tr key={etudiant.id} className="hover:bg-gray-50">
+                   etudiants.length>0 && allEtudiants.map((etudiant : any) => {
+                        return <tr key={etudiant.id} className="hover:bg-gray-50">
                             <th className="flex gap-3 px-6 py-4 font-normal text-gray-900">
                                 <div className="relative h-10 w-10">
                                     <img
@@ -46,31 +58,30 @@ const EtudiantTable = ({etudiants}) => {
                         Active
                         </span>
                             </td>
-                            <td className="px-6 py-4">Product Designer</td>
+                            <td className="px-6 py-4">{etudiant.classe}</td>
                             <td className="px-6 pr-3 py-4">
                                 <div className="flex gap-2">
                         <span
                             className="inline-flex items-center gap-1 rounded-full bg-green-50 px-2 py-1 text-l font-semibold text-green-600"
                         >
-                            Crea/Design
+                            {etudiant.filiere}
                         </span>
                                 </div>
                             </td>
                             <td className="px-6 pl-3 py-4">
                                 <div className="flex justify-end gap-16">
                                     <a x-data="{ tooltip: 'Edit' }" href="#">
-                                        XXX
+                                        Modifier
                                     </a>
-                                    <a x-data="{ tooltip: 'Delete' }" href="#">
-                                        XXX
-                                    </a>
+                                    <span className="cursor-pointer" x-data="{ tooltip: 'Delete' }" onClick={() => {deleteUser(etudiant)}}>
+                                        Supprimer
+                                    </span>
                                 </div>
                             </td>
-                        </tr>)
+                        </tr>
                     })
                 }
                 </tbody>
-
             </table>
         </div>
     );
