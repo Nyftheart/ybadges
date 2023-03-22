@@ -16,5 +16,24 @@ export default {
                 'Content-type':"application/json",
             },
         })
+    },
+    createOne(user : {}){
+        return fetch(`${urlApi}/Users`,{
+            method : "POST",
+            headers: {
+                'Content-type':"application/json",
+            },
+            // @ts-ignore
+            body :JSON.stringify(user),
+        })
+    },
+    editOne(id : number, user : {}){
+        return fetch(`${urlApi}/Users/${id}`,{
+            method : "PUT",
+            headers: {
+                'Content-type':"application/json",
+            },
+            body :JSON.stringify(user),
+        })
     }
 }

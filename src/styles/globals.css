@@ -5,7 +5,7 @@
 @layer base{
     body{
         @apply bg-gray-200;
-        @apply lg:ml-72
+        @apply lg:ml-64
     }
     .separation{
         position: absolute;

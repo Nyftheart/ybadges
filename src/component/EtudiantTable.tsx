@@ -1,10 +1,22 @@
 import React, {useEffect, useState} from 'react';
 import UserService from "../services/User.service";
+import AddUserModal from "./AddUserModal";
 
 
 // @ts-ignore
 const EtudiantTable = ({etudiants}) => {
+    const [showModal,setShowModal] = useState(false);
     const [allEtudiants,setAllEtudiants] = useState([]);
+    const [editEtudiant, setEditEtudiant] = useState(null)
+
+    const displayModal = (show: boolean) =>{
+        console.log(editEtudiant)
+        if(!show){
+            setEditEtudiant(null);
+            console.log(editEtudiant)
+        }
+        setShowModal(show);
+    }
 
     useEffect(() => {
         setAllEtudiants(etudiants);
@@ -20,7 +32,9 @@ const EtudiantTable = ({etudiants}) => {
     }
 
     return (
-        <div className="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5">
+        <>
+            <button className="mt-5 ml-5 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" onClick={() => {displayModal(true)}}>Ajouter un utilisateur</button>
+            <div className="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5">
             <table className="w-full border-collapse bg-white text-left text-sm text-gray-500">
                 <thead className="bg-gray-50">
                     <tr>
@@ -42,8 +56,6 @@ const EtudiantTable = ({etudiants}) => {
                                         src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                         alt=""
                                     />
-                                    <span
-                                        className="absolute right-0 bottom-0 h-2 w-2 rounded-full bg-green-400 ring ring-white"></span>
                                 </div>
                                 <div className="text-sm">
                                     <div className="font-medium text-gray-700">{etudiant.nom} {etudiant.prenom}</div>
@@ -70,7 +82,7 @@ const EtudiantTable = ({etudiants}) => {
                             </td>
                             <td className="px-6 pl-3 py-4">
                                 <div className="flex justify-end gap-16">
-                                    <a x-data="{ tooltip: 'Edit' }" href="#">
+                                    <a x-data="{ tooltip: 'Edit' }" onClick={() => {setEditEtudiant(etudiant);displayModal(true)}} href="#">
                                         Modifier
                                     </a>
                                     <span className="cursor-pointer" x-data="{ tooltip: 'Delete' }" onClick={() => {deleteUser(etudiant)}}>
@@ -84,6 +96,8 @@ const EtudiantTable = ({etudiants}) => {
                 </tbody>
             </table>
         </div>
+            <AddUserModal showModal={showModal} displayModal={displayModal} user={editEtudiant}></AddUserModal>
+        </>
     );
 };
 
