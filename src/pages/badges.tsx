@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import CardBadge from "../component/BadgeCard";
+import { useRouter } from 'next/router'
 
 const cardsData = [
     {
@@ -49,12 +50,19 @@ const cardsData = [
     },
 ];
 
+
 const Badges: NextPage = () => {
+    const router = useRouter()
+    const goCard = () => {
+        console.log('clickedCard');
+       router.push('/badge').then(res => console.log('valid : ',res)).catch(err => console.log('erreur : ',err));
+    };
+
     return (
         <div className="container p-4">
             <div className="flex flex-wrap -mx-4">
                 {cardsData.map((cardData, index) => (
-                    <CardBadge key={index} {...cardData} />
+                    <CardBadge handleClick={goCard} key={index} {...cardData} />
                 ))}
             </div>
         </div>
