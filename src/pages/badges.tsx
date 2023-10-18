@@ -5,47 +5,47 @@ import { useRouter } from 'next/router'
 const cardsData = [
     {
         image: 'https://via.placeholder.com/300',
-        name: 'Card 1',
+        name: 'Badge 1',
         category: 'Category A',
     },
     {
         image: 'https://via.placeholder.com/300',
-        name: 'Card 2',
+        name: 'Badge 2',
         category: 'Category B',
     },
     {
         image: 'https://via.placeholder.com/300',
-        name: 'Card 3',
+        name: 'Badge 3',
         category: 'Category C',
     },
     {
         image: 'https://via.placeholder.com/300',
-        name: 'Card 4',
+        name: 'Badge 4',
         category: 'Category A',
     },
     {
         image: 'https://via.placeholder.com/300',
-        name: 'Card 5',
+        name: 'Badge 5',
         category: 'Category B',
     },
     {
         image: 'https://via.placeholder.com/300',
-        name: 'Card 6',
+        name: 'Badge 6',
         category: 'Category C',
     },
     {
         image: 'https://via.placeholder.com/300',
-        name: 'Card 7',
+        name: 'Badge 7',
         category: 'Category A',
     },
     {
         image: 'https://via.placeholder.com/300',
-        name: 'Card 8',
+        name: 'Badge 8',
         category: 'Category B',
     },
     {
         image: 'https://via.placeholder.com/300',
-        name: 'Card 9',
+        name: 'Badge 9',
         category: 'Category C',
     },
 ];
