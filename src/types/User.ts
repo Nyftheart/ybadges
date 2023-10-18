@@ -3,11 +3,11 @@ import IBadgeEvent from "./BadgeEvent";
 
 export default interface IUser {
     id: string,
-    ProfilPic : string,
-    Nom: string,
-    Prenom: string,
+    profilPic : string,
+    nom: string,
+    prenom: string,
     email:string,
-    Filiere: string,
-    Classe: string,
-    IdBadge:string[] ,
+    filiere: string,
+    classe: string,
+    idBadge:string[] ,
 }
