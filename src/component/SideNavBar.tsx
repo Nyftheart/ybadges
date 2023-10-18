@@ -23,11 +23,12 @@ const SideNavBar = () => {
                     />
                 </Disclosure.Button>
                 <div className="p-6 w-1/2 h-screen bg-white z-20 fixed top-0 -left-96 lg:w-60 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
-                    <div className="flex flex-col justify-start items-center">
-                        <h1 className="text-base text-center cursor-pointer font-bold text-blue-900 border-b border-gray-100 pb-4 w-full">
-                            YBadges
-                        </h1>
-                        <div className="my-4 border-b border-gray-100 pb-4 w-full">
+                    <div className="flex flex-col justify-start items-center h-full">
+                        <div className="flex w-full border-b pb-6">
+                            <img className="w-2/6 h-fit" src="/assets/LOGO%20NOIR.png"/>
+                            <img className="w-4/6 h-fit self-center" src="/assets/TYPO%20NOIR.png"/>
+                        </div>
+                        <div className="my-4 pb-4 w-full">
                             {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
                             <a href="/">
                             <div className="flex mb-2 justify-start items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto" >
@@ -65,10 +66,10 @@ const SideNavBar = () => {
                                 <h3 className="text-base text-gray-800 group-hover:text-white font-semibold">More</h3>
                             </div>
                         </div>*/}
-                        <div className="my-4 w-full">
+                        <div className="pt-5 w-full justify-self-end border-t border-gray-100 mt-auto">
                             <div className="flex mb-2 justify-start items-center gap-4 px-5 border border-gray-200 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto ">
                                 <MdOutlineLogout className="text-2xl text-gray-600 group-hover:text-white "/>
-                                <h3 className="text-base text-gray-800 group-hover:text-white font-semibold">Logout</h3>
+                                <h3 className="text-base text-gray-800 group-hover:text-white font-semibold">Deconnexion</h3>
                             </div>
                         </div>
                     </div>
