@@ -5,7 +5,17 @@
 @layer base{
     body{
         @apply bg-gray-200;
-        @apply lg:ml-64
+    }
+
+    .connected-container{
+        @apply lg:ml-64;
+    }
+
+    .login-container{
+        @apply flex;
+        @apply justify-center;
+        @apply h-screen;
+        @apply items-center;
     }
     .separation{
         position: absolute;

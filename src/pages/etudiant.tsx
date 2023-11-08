@@ -2,17 +2,18 @@ import React from 'react';
 import Banner from '../component/UserBanner'
 import BadgeOwned from "../component/UserBadges";
 import BadgeRequests from "../component/BadgeRequest";
+import IUser from "../types/User";
 const etudiant: React.FC = ({  }) => {
 
-    const user = {
+    const user : IUser = {
         id: '123',
-        ProfilPic: 'https://via.placeholder.com/640x480.png/0077be?text=User+Image',
-        Nom: 'Dupont',
-        Prenom: 'Jean',
+        profilPic: 'https://via.placeholder.com/640x480.png/0077be?text=User+Image',
+        nom: 'Dupont',
+        prenom: 'Jean',
         email:'jean.dupont@example.com',
-        Filiere: 'Informatique',
-        Classe: 'Master 1',
-        IdBadge: ['112', '113', '114'],
+        filiere: 'Informatique',
+        classe: 'Master 1',
+        idBadge: ['112', '113', '114'],
     };
 
     return (

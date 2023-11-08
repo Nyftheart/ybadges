@@ -2,9 +2,10 @@ import React from 'react';
 import Banner from '../component/BadgeBanner'
 import BadgeOwners from "../component/BadgeOwners";
 import BadgeRequests from "../component/BadgeRequest";
+import IBadge from "../types/Badge";
 const BadgeDetailPage: React.FC = ({  }) => {
 
-    const badge = {
+    const badge : IBadge = {
         id: '123',
         image: 'https://via.placeholder.com/640x480.png/0077be?text=Badge+Image',
         name: 'Awesome Badge',

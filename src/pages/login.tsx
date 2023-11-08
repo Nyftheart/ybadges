@@ -1,11 +1,10 @@
 import React from "react";
-import {MdInput} from "react-icons/all";
 
 const Login = () => {
     return (
         <section className="h-full bg-neutral-200 dark:bg-neutral-700">
             <div className="container h-full p-10">
-                <div className="g-6 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
+                <div className="flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
                     <div className="w-full">
                         <div className="block rounded-lg bg-white shadow-lg dark:bg-neutral-800">
                             <div className="g-0 lg:flex lg:flex-wrap">
@@ -13,19 +12,19 @@ const Login = () => {
                                 <div className="px-4 md:px-0 lg:w-6/12">
                                     <div className="md:mx-6 md:p-12">
                                         {/* <!--Logo--> */}
-                                        <div className="text-center">
+                                        <div className="text-center p-5">
                                             <img
-                                                className="mx-auto w-48"
-                                                src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                                                className="mx-auto w-32"
+                                                src="/assets/LOGO%20NOIR.png"
                                                 alt="logo"
                                             />
-                                            <h4 className="mb-12 mt-1 pb-1 text-xl font-semibold">
-                                                YBadges
-                                            </h4>
+                                            <img
+                                                className="mx-auto w-32"
+                                                src="/assets/TYPO%20NOIR.png"
+                                                alt="typo"
+                                            />
                                         </div>
-
                                         <form className="">
-                                            <p className="mb-4 text-center">Please login to your account</p>
                                             {/* <!--Username input--> */}
                                             <div>
                                                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">Email address</label>
