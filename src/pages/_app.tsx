@@ -4,7 +4,7 @@ import SideNavBar from "../component/SideNavBar"
 import Login from "./login";
 
 function MyApp({ Component, pageProps }: AppProps) {
-    const connected: boolean = false;
+    const connected: boolean = true;
     return (
         <div className={connected ? "connected-container" : "login-container"}>
             {connected ? (

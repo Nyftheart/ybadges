@@ -1,5 +1,4 @@
 import IBadge from "./Badge";
-import IBadgeEvent from "./BadgeEvent";
 
 export default interface IUser {
     id: string,
@@ -7,7 +6,17 @@ export default interface IUser {
     nom: string,
     prenom: string,
     email:string,
+    password:string,
     filiere: string,
     classe: string,
-    idBadge:string[] ,
+    ownedBadge:string[],
 }
+
+/*
+*
+* All
+* Un seul (via id,email)
+* Tout ceux d'une filliere
+* Tout ceux d'une classe
+*
+* */

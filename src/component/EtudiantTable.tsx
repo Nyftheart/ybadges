@@ -35,7 +35,7 @@ const EtudiantTable = ({etudiants}) => {
         <>
             <button className="mt-5 ml-5 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" onClick={() => {displayModal(true)}}>Ajouter un utilisateur</button>
             <div className="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5">
-            <table className="w-full border-collapse bg-white text-left text-sm text-gray-500">
+            <table className="w-full border-collapse bg-white text-left text-sm text-gray-500 overflow-scroll">
                 <thead className="bg-gray-50">
                     <tr>
                         <th scope="col" className="px-6 py-4 font-medium text-gray-900">Nom</th>
@@ -53,7 +53,7 @@ const EtudiantTable = ({etudiants}) => {
                                 <div className="relative h-10 w-10">
                                     <img
                                         className="h-full w-full rounded-full object-cover object-center"
-                                        src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        src={etudiant.profilPic}
                                         alt=""
                                     />
                                 </div>

@@ -1,3 +1,5 @@
+//TODO Modifier les services une fois la BDD en place.
+
 const urlApi = "https://ybadges.azurewebsites.net/api";
 export default {
     getAllUsers(){
