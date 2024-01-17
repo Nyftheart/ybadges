@@ -24,5 +24,56 @@ export default {
         } else {
             return defaultBadge;
         }
+    },
+    getAllBadges(){
+
+    },
+    getAllOwners(){
+
+    },
+    getAllRequest() {
+
+    },
+    getOneBadgeByName(){
+
+    },
+    getBadgeFromCategory() {
+
+    },
+    createOne(){
+
+    },
+    deleteOne(){
+
+    },
+    updateOne() {
+
+    },
+    updateDesc(){
+
+    },
+    updateName() {
+
+    },
+    updateImage() {
+
+    },
+    updateCategory() {
+
+    },
+    addOwner() {
+
+    },
+    deleteOwner() {
+
+    },
+    addRequest() {
+
+    },
+    deleteRequest() {
+
     }
 }
+
+//cree un qr code pour attribution automatique
+

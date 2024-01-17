@@ -37,5 +37,25 @@ export default {
             },
             body :JSON.stringify(user),
         })
+    },
+    getOneById(){
+    },
+    getOneByName(){
+
+    },
+    getOneByFilliaire(){
+
+    },
+    getOneByMail(){
+
+    },
+    getOneByClasse(){
+
+    },
+    EditProfilPic(){
+
+    },
+    GrantBadge(){
+
     }
 }

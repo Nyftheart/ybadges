@@ -6,15 +6,3 @@ export default interface IBadgeReq {
     comment: string;
     proof: string;
 }
-
-
-
-/*
-*
-* All
-* Une seule via id
-* Insert
-* Update
-* Delete
-*
-* */

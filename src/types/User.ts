@@ -1,5 +1,3 @@
-import IBadge from "./Badge";
-
 export default interface IUser {
     id: string,
     profilPic : string,
@@ -12,11 +10,3 @@ export default interface IUser {
     ownedBadge:string[],
 }
 
-/*
-*
-* All
-* Un seul (via id,email)
-* Tout ceux d'une filliere
-* Tout ceux d'une classe
-*
-* */
